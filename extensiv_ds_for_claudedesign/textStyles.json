@@ -1,0 +1,401 @@
+{
+  "fileName": "Extensiv Design Kit (Copy)",
+  "textStyles": [
+    {
+      "name": "typography/h1",
+      "fontFamily": "Inter",
+      "fontWeight": "Black",
+      "fontSize": 40,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -1.5
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/h2",
+      "fontFamily": "Inter",
+      "fontWeight": "Extra Bold",
+      "fontSize": 32,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.5
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/h3",
+      "fontFamily": "Inter",
+      "fontWeight": "Extra Bold",
+      "fontSize": 28,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/h4",
+      "fontFamily": "Inter",
+      "fontWeight": "Extra Bold",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.25
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/h5",
+      "fontFamily": "Inter",
+      "fontWeight": "Extra Bold",
+      "fontSize": 20,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/h6",
+      "fontFamily": "Inter",
+      "fontWeight": "Extra Bold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/subtitle1",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/subtitle2",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.10000000149011612
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/body1",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/body2",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.17000000178813934
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/body2-tabular",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.17000000178813934
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "typography/overline",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 1
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "typography/caption",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.4000000059604645
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_alert/title",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_alert/description",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_avatar/initials",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 20,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.14000000059604645
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_badge/label",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.14000000059604645
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_bottomNavigation/activeLabel",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.4000000059604645
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_button/large",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 15,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.46000000834465027
+      },
+      "textCase": "TITLE"
+    },
+    {
+      "name": "_button/medium",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.4000000059604645
+      },
+      "textCase": "TITLE"
+    },
+    {
+      "name": "_button/small",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 13,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.46000000834465027
+      },
+      "textCase": "TITLE"
+    },
+    {
+      "name": "_chip/label",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 13,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.1599999964237213
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_datePicker/currentMonth",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_input/label",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_input/value",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_input/helper",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.4000000059604645
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_list/subheader",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.10000000149011612
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_menu/itemDefault",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_menu/itemDense",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.17000000178813934
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_table/header",
+      "fontFamily": "Inter",
+      "fontWeight": "Semi Bold",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.17000000178813934
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_tooltip/label",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 10,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_dataGrid/aggregationColumnHeaderLabel",
+      "fontFamily": "Inter",
+      "fontWeight": "Medium",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "_library/heading",
+      "fontFamily": "Roboto Mono",
+      "fontWeight": "Medium",
+      "fontSize": 64,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -1.5
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_library/label",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.17000000178813934
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_dialog/title",
+      "fontFamily": "Inter",
+      "fontWeight": "Extra Bold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "_dialog/subtitle",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0.15000000596046448
+      },
+      "textCase": "TITLE"
+    }
+  ]
+}

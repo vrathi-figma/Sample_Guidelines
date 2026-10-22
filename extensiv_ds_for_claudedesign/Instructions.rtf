@@ -1,0 +1,141 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19460\viewh26640\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs30 \cf0 #About Extensiv Design Kit\
+Extensiv Design Kit is based on MUI design system with custom styles. It also has a small number of custom components that will be added to this design system later. \
+\
+\'97\
+\
+#Colors\
+The Primary colour palette is based on Extensiv brand colours Teal/Dark Teal. It is used for UI elements like Primary buttons, switches, radio and checkboxes, etc.\
+Other brand / marketing colors (Plum, Berry, Magenta, Energy Orange, Yellow/Sunflower) are used primarily in marketing materials. Do not use in the product UI unless explicitly instructed.\
+\
+\'97\
+\
+#Icons\
+\
+##Font Awesome\
+\
+Font Awesome is our default icon set. It is mostly used for illustrative purposes. \
+\
+Our preferred icon style is sharp-solid. To improve the recognition of the icon (for example, cloud, gear, etc.), other styles can be used: sharp-regular, solid, regular.\
+\
+The best Scale options are: \
+- .75x  |  (15 x 15 px, including padding)\
+- 1x    |  (20 x 20 px, including padding)\
+- 1.25x |  (25 x 25 px, including padding)\
+\
+Double check icon names before using them to avoid hallucinations. \
+\
+##Material icons\
+\
+The original Material icons are still used as integral parts of certain components (such as Checkbox, Radio, Select, etc.) They mostly serve functional rather than illustrative purposes.\
+\
+\'97\
+\
+#Components\
+\
+The Figma file lists multiple components. To begin with, we can only include the key components in this design system, and add others later. \
+\
+##Key components\
+\
+###INPUTS\
+\
+####Button \
+Use `contained` variant with `primary` color as the main CTA. Limit to one instance per view.\
+Use `outlined` variant with `inherit` color for all other CTAs.\
+The colors `error` and `warning` can be used when the button is a part of another component (e.g. Alert), as defined by the design system Figma file. Don\'92t use them outside of these components unless explicitly asked.\
+\
+####Checkbox (including <FormControlLabel> and <FormGroup>)\
+\pard\pardeftab720\partightenfactor0
+\cf0 For `<FormControlLabel> | Checkbox`, the default Label Placement is End. Use other placements sparingly, only if there is a strong reason why End placement doesn\'92t work.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+####Radio group (including <FormControlLabel> and <FormGroup>)\
+\pard\pardeftab720\partightenfactor0
+\cf0 For `<FormControlLabel> | Radio`, the default Label Placement is End. Use other placements sparingly, only if there is a strong reason why End placement doesn\'92t work.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+####Select\
+Use `outlined` variant unless instructed otherwise. Never use `filled` variant. \
+\
+####Switch \
+\
+####Text field\
+Use `outlined` variant unless instructed otherwise. Never use `filled` variant. \
+\
+###DATA DISPLAY\
+\
+####Avatar \
+Don\'92t implement Avatar Group (we can add it later)\
+\
+####Chip\
+`Default` and `Primary` are the most commonly used colors. `Secondary` is the least commonly used. Other colors from the Material palette can also be used, especially for multiple color-coded categories.\
+\
+####Divider\
+\
+####List\
+\
+###FEEDBACK\
+\
+####Alert \
+Alert-Filled is only used for Success/Error messages in Snackbar.\
+\
+####Snackbar\
+\
+###NAVIGATION\
+\
+####Breadcrumbs\
+Unless instructed otherwise, always use `Separator`: Text \'93/\'94 and `Icon`: none.\
+\
+####Menu\
+\
+####Pagination \
+Use `Shape`: Rounded only\
+\
+####Stepper \
+\
+####Dialog\
+\
+####Tabs\
+\
+###MUI X\
+\
+####Date / Time: Not listed in the Figma file, but follow MUI documentation with Extensiv styling\
+\
+##Components to be added later:\
+\
+###MUI X\
+\
+####Data Grid: Not listed in Figma file, but follow MUI documentation with Extensiv styling\
+\
+\'97\
+\
+#Custom components\
+Components we\'92ve added to our design system to supplement MUI. Most have a Storybook page in addition to the Figma design. \
+\
+Implement the following components as outlined in Figma and Storybook: \
+\
+- Drag & Drop (Storybook: https://storybook.extensiv.com/?path=/story/shared-extensivdragdrop--list-drag-drop)\
+- Filter (Storybook: https://storybook.extensiv.com/?path=/story/shared-filterpopover--filter)\
+- IconButton - Outlined (style variation of the MUI Icon Button)\
+- Select Card\
+\
+\'97\
+\
+#Import the Brand Mark, TopNav and SideNav components from 3PL Design Kit.\
+\
+Portable bundle: /projects/5c3c4b1b-327d-4f65-8fc0-cfb18a3178ac/_portable/\
+\
+Steps:\
+\
+- Read /projects/5c3c4b1b-327d-4f65-8fc0-cfb18a3178ac/_portable/README.md, then explore components/, tokens.css, font-awesome-extras.css, and assets/.\
+- Copy components/TopNav.*, components/SideNav.*, and components/Icon.* into this library (keep Icon beside them \'97 they import ./Icon.jsx; or repoint to this library's existing Icon if it wraps Font Awesome the same way).\
+- Copy the Brand Mark: all of assets/* (logo-default/white/plum.svg + brandmark-default/white/plum.svg) into this library's assets. The navigation components must use this copied Brand Mark via logoSrc \'97 logo-white.svg for TopNav (dark bar), logo-default.svg for SideNav (white rail); logo-plum.svg on plum backgrounds; the brandmark-*.svg arrow glyphs where the full logo won't fit.\
+- These components read only --font-sans and --radius-pill. Ensure they exist (or map to this library's equivalents). All colors are literal Figma values \'97 do NOT recolor.\
+- Font Awesome is already loaded here. The AI/Apps buttons use Sharp-only glyphs sparkles and grid \'97 add font-awesome-extras.css's codepoint mappings and ensure a "Font Awesome 6 Sharp" Solid @font-face exists, else those two glyphs won't render.\
+- Write a @dsCard HTML for each component, mounting via this project's window.<Namespace> (run check_design_system for the namespace). Verify both render with the copied Brand Mark.}
