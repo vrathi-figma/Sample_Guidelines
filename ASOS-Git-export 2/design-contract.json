@@ -1,0 +1,169 @@
+{
+  "schema": "thread.ds.design-contract.v1",
+  "generatedAt": "2026-07-13T09:59:26.608Z",
+  "sources": {
+    "variables": "packages/tokens/exports/figma-variables.json",
+    "components": "docs/figma-make/components.json",
+    "componentAnatomy": "docs/figma-make/component-anatomy.json",
+    "componentRenderSpecs": "docs/figma-make/component-render-specs.json",
+    "textStyles": "docs/figma-make/text-styles.json",
+    "icons": "docs/figma-make/icons.json",
+    "iconsIndex": "docs/figma-make/icons.index.json"
+  },
+  "summary": {
+    "collections": 11,
+    "modes": 19,
+    "variables": 530,
+    "components": 31,
+    "component_anatomy": 31,
+    "component_render_specs": 31,
+    "text_styles": 42,
+    "icons": 0,
+    "icon_groups": 0
+  },
+  "data": {
+    "collections": [
+      {
+        "id": "VariableCollectionId:2019:2",
+        "name": "_1. Global"
+      },
+      {
+        "id": "VariableCollectionId:2003:2",
+        "name": "2. Alias"
+      },
+      {
+        "id": "VariableCollectionId:2132:2",
+        "name": "3. Colour"
+      },
+      {
+        "id": "VariableCollectionId:2153:1810",
+        "name": "4. Typography"
+      },
+      {
+        "id": "VariableCollectionId:4079:40",
+        "name": "5. Spacing and Padding"
+      },
+      {
+        "id": "VariableCollectionId:4081:19477",
+        "name": "6. Shape"
+      },
+      {
+        "id": "VariableCollectionId:6238:19705",
+        "name": "7. Elevation and Shadows"
+      },
+      {
+        "id": "VariableCollectionId:6238:19757",
+        "name": "8. Layout"
+      },
+      {
+        "id": "VariableCollectionId:6238:19763",
+        "name": "9. Breakpoints"
+      },
+      {
+        "id": "VariableCollectionId:6238:19770",
+        "name": "10. Motion and Float"
+      },
+      {
+        "id": "VariableCollectionId:6238:19772",
+        "name": "11. Image"
+      }
+    ],
+    "modes": [
+      {
+        "id": "2019:0",
+        "name": "ASOS",
+        "collectionId": "VariableCollectionId:2019:2"
+      },
+      {
+        "id": "2003:0",
+        "name": "ASOS",
+        "collectionId": "VariableCollectionId:2003:2"
+      },
+      {
+        "id": "2132:0",
+        "name": "ASOS Light",
+        "collectionId": "VariableCollectionId:2132:2"
+      },
+      {
+        "id": "2541:0",
+        "name": "ASOS Dark",
+        "collectionId": "VariableCollectionId:2132:2"
+      },
+      {
+        "id": "4059:9",
+        "name": "iOS",
+        "collectionId": "VariableCollectionId:2153:1810"
+      },
+      {
+        "id": "4059:8",
+        "name": "Android",
+        "collectionId": "VariableCollectionId:2153:1810"
+      },
+      {
+        "id": "4059:7",
+        "name": "mWeb",
+        "collectionId": "VariableCollectionId:2153:1810"
+      },
+      {
+        "id": "2153:0",
+        "name": "dWeb",
+        "collectionId": "VariableCollectionId:2153:1810"
+      },
+      {
+        "id": "4079:0",
+        "name": "iOS",
+        "collectionId": "VariableCollectionId:4079:40"
+      },
+      {
+        "id": "4079:1",
+        "name": "Android",
+        "collectionId": "VariableCollectionId:4079:40"
+      },
+      {
+        "id": "4079:2",
+        "name": "mWeb",
+        "collectionId": "VariableCollectionId:4079:40"
+      },
+      {
+        "id": "4079:3",
+        "name": "dWeb",
+        "collectionId": "VariableCollectionId:4079:40"
+      },
+      {
+        "id": "4081:0",
+        "name": "iOS",
+        "collectionId": "VariableCollectionId:4081:19477"
+      },
+      {
+        "id": "6238:0",
+        "name": "ASOS Light",
+        "collectionId": "VariableCollectionId:6238:19705"
+      },
+      {
+        "id": "6238:1",
+        "name": "ASOS Dark",
+        "collectionId": "VariableCollectionId:6238:19705"
+      },
+      {
+        "id": "6238:2",
+        "name": "Mode 1",
+        "collectionId": "VariableCollectionId:6238:19757"
+      },
+      {
+        "id": "6238:3",
+        "name": "Mode 1",
+        "collectionId": "VariableCollectionId:6238:19763"
+      },
+      {
+        "id": "6238:4",
+        "name": "Mode 1",
+        "collectionId": "VariableCollectionId:6238:19770"
+      },
+      {
+        "id": "6238:5",
+        "name": "Mode 1",
+        "collectionId": "VariableCollectionId:6238:19772"
+      }
+    ]
+  }
+}

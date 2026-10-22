@@ -1,0 +1,1843 @@
+{
+  "schema": "thread.ds.component-anatomy.v2",
+  "generatedAt": "2026-07-13T09:59:26.608Z",
+  "source": {
+    "fileKey": "",
+    "fileName": "Components • Thread ������ DS • ASOS"
+  },
+  "detailLevel": "lite",
+  "components": [
+    {
+      "id": "328:6409",
+      "key": "3eb6ec6159f7030b5db9bb100c0317ff675e4d80",
+      "name": "checkbox",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Checkbox component allows users to select one or more options from a list. It supports binary (selected/deselected) or mixed states to reflect user choices or system conditions as well as label (true/false).\n\nUsage:\nCheckboxes are used in forms, filters, settings, or any interface where multiple selections are allowed. They should be accompanied by clear labels and may appear in both light and dark themes to maintain accessibility and design consistency.",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Label text#96:0": {
+          "type": "TEXT",
+          "defaultValue": "This is a label"
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Rounded",
+          "variantOptions": [
+            "Rounded",
+            "Square"
+          ]
+        },
+        "Selected": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "WithLabel": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Rounded",
+            "Square"
+          ]
+        },
+        "Selected": {
+          "values": [
+            "False",
+            "True"
+          ]
+        },
+        "WithLabel": {
+          "values": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    },
+    {
+      "id": "96:1710",
+      "key": "e142df6cd915603fc0ed80dd0b0169de47e2242e",
+      "name": "radio",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Radio component allows users to select a single option from a predefined set. Unlike checkboxes, only one radio button in a group can be selected at a time, ensuring mutually exclusive choices. Each option should be clearly labeled to reflect its purpose or outcome.\n\nUsage:\nRadio buttons are used in forms, filters, and settings where only one selection is permitted. They are ideal for short lists of options that are all visible at once. Radios should be grouped logically, clearly labeled, and designed for accessibility in both light and dark themes.",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Label text#96:0": {
+          "type": "TEXT",
+          "defaultValue": "This is a label"
+        },
+        "Selected": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "WithLabel": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Selected": {
+          "values": [
+            "False",
+            "True"
+          ]
+        },
+        "WithLabel": {
+          "values": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    },
+    {
+      "id": "595:10426",
+      "key": "45f6241982f3367d8842fc7c334c3fbdb672bcdc",
+      "name": "input.field",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Input Field component allows users to enter, edit, or update text-based information. It supports a wide range of data types, from short labels to longer free-text responses. Input fields should clearly communicate their purpose through concise labelling and helpful affordances such as placeholders or helper text. The component is designed to be flexible while maintaining consistency across platforms and themes.\n\nUsage:\nInput fields are used across forms, onboarding flows, checkout, account settings, and any interaction where users provide information. They are ideal when free-text or typed responses are required rather than selecting from predefined options. Input fields should be grouped logically within a form, labelled clearly, and support both light and dark themes. When appropriate, use helper text and validation messaging to guide users, reduce errors, and create a smooth data entry experience.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Label text#595:12": {
+          "type": "TEXT",
+          "defaultValue": "This is a label"
+        },
+        "Error text#595:16": {
+          "type": "TEXT",
+          "defaultValue": "This is error text"
+        },
+        "Show Label#1070:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Focus",
+            "Error"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "State": {
+          "values": [
+            "Default",
+            "Focus",
+            "Error"
+          ]
+        }
+      }
+    },
+    {
+      "id": "472:4891",
+      "key": "12ff37ca7305660a4597983d95af382b7a16ce71",
+      "name": "select.group/DOB/large",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Select component allows users to choose one option from a predefined list. It’s designed for moments where free text isn’t needed and a controlled set of values ensures accuracy, consistency, and ease of completion. Select components support key decision points in forms, filters, and structured data entry, helping users make clear, confident choices.\nSelect Groups bring together multiple related selects, such as day, month, and year in a date of birth field, so users can complete multi-part inputs in a predictable and accessible way.\n\nUsage:\nUse Select when users need to pick a single option from a known list and where showing all choices upfront would clutter the interface. They should be used for structured inputs like size, quantity, sort options, delivery preferences, or attributes with fixed values.\nSelect components must provide clear labelling, intuitive interaction, and strong visual cues to signal their state. Lists should be ordered logically, kept concise, and avoid overwhelming the user.\nFor Select Groups, keep the sequence natural and consistent with user expectations, ensuring spacing and alignment make the relationship between fields obvious. All Selects should remain accessible, responsive, and easy to use across light and dark themes.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Error text#472:12": {
+          "type": "TEXT",
+          "defaultValue": "This is error text"
+        },
+        "With Label#472:20": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Focus day",
+            "Focus month",
+            "Focus year",
+            "Error all",
+            "Error day",
+            "Error month",
+            "Error year"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "State": {
+          "values": [
+            "Default",
+            "Focus day",
+            "Focus month",
+            "Focus year",
+            "Error all",
+            "Error day",
+            "Error month",
+            "Error year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "558:3490",
+      "key": "00f3e6f0f3cb86d0faa67af3ec0eec92d5996d10",
+      "name": "select.group/DOB/small",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Select component allows users to choose one option from a predefined list. It’s designed for moments where free text isn’t needed and a controlled set of values ensures accuracy, consistency, and ease of completion. Select components support key decision points in forms, filters, and structured data entry, helping users make clear, confident choices.\nSelect Groups bring together multiple related selects, such as day, month, and year in a date of birth field, so users can complete multi-part inputs in a predictable and accessible way.\n\nUsage:\nUse Select when users need to pick a single option from a known list and where showing all choices upfront would clutter the interface. They should be used for structured inputs like size, quantity, sort options, delivery preferences, or attributes with fixed values.\nSelect components must provide clear labelling, intuitive interaction, and strong visual cues to signal their state. Lists should be ordered logically, kept concise, and avoid overwhelming the user.\nFor Select Groups, keep the sequence natural and consistent with user expectations, ensuring spacing and alignment make the relationship between fields obvious. All Selects should remain accessible, responsive, and easy to use across light and dark themes.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Error text#472:12": {
+          "type": "TEXT",
+          "defaultValue": "This is error text"
+        },
+        "With Label#472:20": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Focus month",
+            "Focus year",
+            "Error all",
+            "Error month",
+            "Error year"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "State": {
+          "values": [
+            "Default",
+            "Focus month",
+            "Focus year",
+            "Error all",
+            "Error month",
+            "Error year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "558:4183",
+      "key": "11f1f5188f460abb69230f452bf9775c04d586d6",
+      "name": "select",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Select component allows users to choose one option from a predefined list. It’s designed for moments where free text isn’t needed and a controlled set of values ensures accuracy, consistency, and ease of completion. Select components support key decision points in forms, filters, and structured data entry, helping users make clear, confident choices.\nSelect Groups bring together multiple related selects, such as day, month, and year in a date of birth field, so users can complete multi-part inputs in a predictable and accessible way.\n\nUsage:\nUse Select when users need to pick a single option from a known list and where showing all choices upfront would clutter the interface. They should be used for structured inputs like size, quantity, sort options, delivery preferences, or attributes with fixed values.\nSelect components must provide clear labelling, intuitive interaction, and strong visual cues to signal their state. Lists should be ordered logically, kept concise, and avoid overwhelming the user.\nFor Select Groups, keep the sequence natural and consistent with user expectations, ensuring spacing and alignment make the relationship between fields obvious. All Selects should remain accessible, responsive, and easy to use across light and dark themes.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Error text#558:19": {
+          "type": "TEXT",
+          "defaultValue": "This is error text"
+        },
+        "Label text#558:20": {
+          "type": "TEXT",
+          "defaultValue": "This is a label"
+        },
+        "With Label#558:21": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Label description#558:34": {
+          "type": "TEXT",
+          "defaultValue": "Your Fit Assistant size is S."
+        },
+        "With description#558:38": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Focus",
+            "Error"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "State": {
+          "values": [
+            "Default",
+            "Focus",
+            "Error"
+          ]
+        }
+      }
+    },
+    {
+      "id": "564:4256",
+      "key": "2d272bf141d6b009e1168bb1dd2f023246716bef",
+      "name": "select.size",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Select component allows users to choose one option from a predefined list. It’s designed for moments where free text isn’t needed and a controlled set of values ensures accuracy, consistency, and ease of completion. Select components support key decision points in forms, filters, and structured data entry, helping users make clear, confident choices.\nSelect Groups bring together multiple related selects, such as day, month, and year in a date of birth field, so users can complete multi-part inputs in a predictable and accessible way.\n\nUsage:\nUse Select when users need to pick a single option from a known list and where showing all choices upfront would clutter the interface. They should be used for structured inputs like size, quantity, sort options, delivery preferences, or attributes with fixed values.\nSelect components must provide clear labelling, intuitive interaction, and strong visual cues to signal their state. Lists should be ordered logically, kept concise, and avoid overwhelming the user.\nFor Select Groups, keep the sequence natural and consistent with user expectations, ensuring spacing and alignment make the relationship between fields obvious. All Selects should remain accessible, responsive, and easy to use across light and dark themes.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Focus",
+            "Error"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "State": {
+          "values": [
+            "Default",
+            "Focus",
+            "Error"
+          ]
+        }
+      }
+    },
+    {
+      "id": "562:56695",
+      "key": "0b7f9f2f810823e335ab7d1f23e3ab0b9636998f",
+      "name": "select.country",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Select component allows users to choose one option from a predefined list. It’s designed for moments where free text isn’t needed and a controlled set of values ensures accuracy, consistency, and ease of completion. Select components support key decision points in forms, filters, and structured data entry, helping users make clear, confident choices.\nSelect Groups bring together multiple related selects, such as day, month, and year in a date of birth field, so users can complete multi-part inputs in a predictable and accessible way.\n\nUsage:\nUse Select when users need to pick a single option from a known list and where showing all choices upfront would clutter the interface. They should be used for structured inputs like size, quantity, sort options, delivery preferences, or attributes with fixed values.\nSelect components must provide clear labelling, intuitive interaction, and strong visual cues to signal their state. Lists should be ordered logically, kept concise, and avoid overwhelming the user.\nFor Select Groups, keep the sequence natural and consistent with user expectations, ensuring spacing and alignment make the relationship between fields obvious. All Selects should remain accessible, responsive, and easy to use across light and dark themes.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Error text#558:19": {
+          "type": "TEXT",
+          "defaultValue": "This is error text"
+        },
+        "With Label#558:21": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Focus",
+            "Error"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "State": {
+          "values": [
+            "Default",
+            "Focus",
+            "Error"
+          ]
+        }
+      }
+    },
+    {
+      "id": "650:48864",
+      "key": "bbe9cff4f829e072dc3a815d707d426becb59481",
+      "name": "tag",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Tag component highlights short pieces of information that support quick scanning, categorisation, or filtering. Tags give users lightweight context at a glance, helping them understand product attributes, status updates, or applied filters without adding visual noise.\n\nTags are designed to be compact, readable, and flexible across surfaces. They work particularly well for signposting things like selling points, stock status, styles, or categories. When used interactively, Tags can also act as small controls that let users refine results or toggle options with minimal effort.\n\nTag Groups bring multiple related Tags together, such as filter sets or product attributes, allowing users to scan, compare, and act on information quickly and confidently.\n\nUsage:\nUse Tags when you need to surface small but important details that help users understand or act on information at speed. They are ideal for things like product attributes, urgency signals, statuses, or applied filters where space is limited and clarity is essential.\n\nTags must be concise, clearly labelled, and visually distinct enough to stand out without overpowering nearby content. When interactive, Tags should have clear affordance and provide straightforward feedback when selected or removed.\n\nFor Tag Groups, keep ordering predictable and user led. Attribute Tags should be grouped logically, while interactive filter Tags should sit near the area they relate to so users can adjust their view with minimal friction. All Tags should remain accessible, responsive, and easy to use across light and dark themes.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Text#650:54": {
+          "type": "TEXT",
+          "defaultValue": "default"
+        },
+        "Show close#650:55": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Selected"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "State": {
+          "values": [
+            "Default",
+            "Hover",
+            "Selected"
+          ]
+        }
+      }
+    },
+    {
+      "id": "334:1157",
+      "key": "49db0d2dc35fe4c75be1156ccef00c1597c24ce2",
+      "name": "button",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Button component enables users to trigger an action or event, such as submitting a form, adding an item to a bag, or navigating to another page. Buttons provide clear, actionable touchpoints that guide users through key interactions and workflows. Each button should be labeled with concise, action-driven text that communicates its purpose.\n\nUsage:\nButtons are used to initiate primary and secondary actions within an interface. They should appear in places where users expect to take action, such as completing a task or confirming a choice. Use primary buttons for the most important actions on a screen, secondary buttons for supporting actions, and tertiary or text buttons for less prominent options. All buttons should be clearly distinguishable, accessible, and provide visible feedback in both light and dark themes.",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Accent Primary",
+            "Accent Secondary"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Disabled"
+          ]
+        },
+        "Pill": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Accent Primary",
+            "Accent Secondary"
+          ]
+        },
+        "State": {
+          "values": [
+            "Default",
+            "Hover",
+            "Disabled"
+          ]
+        },
+        "Pill": {
+          "values": [
+            "False",
+            "True"
+          ]
+        }
+      }
+    },
+    {
+      "id": "428:726",
+      "key": "931c3eb8a7552de4cbc3803ff81d6ceadea428f3",
+      "name": "icon.button",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Icon Button component enables users to perform quick, focused actions using recognizable icons instead of text. They are ideal for compact interfaces, repeated actions, or when space is limited. Icon Buttons communicate meaning through universally understood symbols and are most effective when the action they represent is visually intuitive.\n\nUsage:\nUse Icon Buttons to trigger simple or frequently used actions where a visual symbol can clearly represent intent without additional text. Always accompany icons with accessible labels (via tooltips or aria-labels) to ensure usability for all users.\nUse Icon Buttons for key actions. Ensure icons are consistent in size, contrast, and alignment, and provide visual feedback in both light and dark themes.",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Text#429:9": {
+          "type": "TEXT",
+          "defaultValue": "button"
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Secondary",
+          "variantOptions": [
+            "Secondary",
+            "Accent Secondary"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Disabled",
+            "Loading"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Secondary",
+            "Accent Secondary"
+          ]
+        },
+        "State": {
+          "values": [
+            "Default",
+            "Hover",
+            "Disabled",
+            "Loading"
+          ]
+        }
+      }
+    },
+    {
+      "id": "637:48040",
+      "key": "483f1879f69ceb08229ecc9bff692b8de17e4a68",
+      "name": "icon.button.save",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Icon Button component enables users to perform quick, focused actions using recognizable icons instead of text. They are ideal for compact interfaces, repeated actions, or when space is limited. Icon Buttons communicate meaning through universally understood symbols and are most effective when the action they represent is visually intuitive.\n\nUsage:\nUse Icon Buttons to trigger simple or frequently used actions where a visual symbol can clearly represent intent without additional text. Always accompany icons with accessible labels (via tooltips or aria-labels) to ensure usability for all users.\nUse Icon Buttons for key actions. Ensure icons are consistent in size, contrast, and alignment, and provide visual feedback in both light and dark themes.",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "CENTER",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Secondary"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Selected"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Primary",
+            "Secondary"
+          ]
+        },
+        "State": {
+          "values": [
+            "Default",
+            "Selected"
+          ]
+        }
+      }
+    },
+    {
+      "id": "3623:6815",
+      "key": "131387a9d5098d12d1cb27fb15b92d079e5525da",
+      "name": "button.liquidglass",
+      "type": "COMPONENT_SET",
+      "description": "",
+      "layout": {
+        "layoutMode": "NONE",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 20,
+        "paddingTop": 20,
+        "paddingRight": 20,
+        "paddingBottom": 20,
+        "paddingLeft": 20,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Tinted": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Tinted": {
+          "values": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    },
+    {
+      "id": "3623:6863",
+      "key": "fc50340e0df123b1f2dedebcb218b4353887b286",
+      "name": "Button - Liquid Glass - Symbol",
+      "type": "COMPONENT_SET",
+      "description": "",
+      "layout": {
+        "layoutMode": "NONE",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 20,
+        "paddingTop": 20,
+        "paddingRight": 20,
+        "paddingBottom": 20,
+        "paddingLeft": 20,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Tinted": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Tinted": {
+          "values": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    },
+    {
+      "id": "455:3147",
+      "key": "45e8f386b9c7c01b4d632f702522a3e4d972cf73",
+      "name": "action.bar",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Action Bar component provides users with quick access to key actions related to a specific context or selection. It typically appears as a horizontal bar containing grouped buttons and icons that enable users to act efficiently without navigating away. The Action Bar helps streamline task completion by keeping essential actions easily accessible and visually distinct from surrounding content.\n\nUsage:\nUse the Action Bar in areas where users need to perform multiple or frequent actions—such as saving items or playing video. The Action Bar should adapt to different viewports, remain accessible in both light and dark themes, and maintain consistent alignment and spacing across layouts.",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Save/Video/BTL",
+          "variantOptions": [
+            "Save/Video/BTL",
+            "Search"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Pressed left",
+            "Pressed centre",
+            "Pressed right"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Save/Video/BTL",
+            "Search"
+          ]
+        },
+        "State": {
+          "values": [
+            "Default",
+            "Pressed left",
+            "Pressed centre",
+            "Pressed right"
+          ]
+        }
+      }
+    },
+    {
+      "id": "438:3023",
+      "key": "ebb5d369a5a4ba93e20063624548c925b86e7609",
+      "name": "social.button",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Social Button component enables users to connect, share, or sign in through third-party social platforms. It provides a familiar and trusted way to interact using existing social accounts, reducing friction in sign-up or sharing experiences. Each button carries the respective platform’s brand styling to maintain recognition and trust.\n\nUsage:\nUse Social Buttons when users need to authenticate, share content, or link their account with a social platform. Ensure each button follows the brand’s official guidelines for colour, icon, and label usage. Group multiple Social Buttons logically, maintaining equal spacing and consistent sizing. They should remain accessible across themes and devices, with clear focus and hover states to support all users.",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Apple",
+          "variantOptions": [
+            "Apple",
+            "Google",
+            "Facebook"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Pressed"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Apple",
+            "Google",
+            "Facebook"
+          ]
+        },
+        "State": {
+          "values": [
+            "Default",
+            "Pressed"
+          ]
+        }
+      }
+    },
+    {
+      "id": "763:2227",
+      "key": "a2c25d96a5d92b5715cf97fdb26961df36b28795",
+      "name": "alert",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Alert component draws immediate attention to important information that affects the user’s ability to understand, proceed or make a decision. It is used to communicate critical messages such as errors, warnings or important confirmations that require awareness or action. Alerts are designed to be highly visible, clear in intent and persistent until the user has acknowledged the message.\n\nUsage:\nUse Alerts to communicate high-priority messages that interrupt the normal flow and require user attention. Alerts should be placed inline within the content area where the issue occurs or at the top of a page when the message applies to the entire screen.\n\nAlerts are suitable for error states, warnings, success confirmations that need emphasis and system messages that impact user progress. They should be concise, action oriented where appropriate and use the correct alert type to reflect the level of urgency.\n\nAlerts remain visible until dismissed or resolved and should adapt across light and dark themes while maintaining contrast and accessibility. Avoid using Alerts for low-priority or transient feedback, where a Snackbar or Banner would be more appropriate.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Information",
+          "variantOptions": [
+            "Warning",
+            "Error",
+            "System",
+            "Success",
+            "Information"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Warning",
+            "Error",
+            "System",
+            "Success",
+            "Information"
+          ]
+        }
+      }
+    },
+    {
+      "id": "780:17368",
+      "key": "c31a420a9ee6a4c267281e3c141979d81cc28dbc",
+      "name": "snackbar",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Snackbar component provides brief, non-intrusive feedback in response to a user action. It is used to confirm that something has happened without interrupting the user’s current task or requiring immediate attention. Snackbars support awareness and reassurance while allowing users to continue their flow uninterrupted.\n\nUsage:\nUse Snackbars to communicate low-priority, time-limited messages such as successful actions, minor updates or undo opportunities. Snackbars should appear temporarily, typically anchored to the bottom of the screen, and dismiss automatically after a short duration.\n\nSnackbars may include a single optional action where it adds clear value, such as undo, but should never block progress or require acknowledgement. They are best suited for confirmations like item added, settings updated or changes saved.\n\nSnackbars should adapt across light and dark themes, maintain sufficient contrast and remain readable without drawing excessive attention. Avoid using Snackbars for critical information, errors or warnings that require user action, where an Alert should be used instead.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Information",
+          "variantOptions": [
+            "Information",
+            "Success",
+            "Warning",
+            "Error",
+            "System"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Information",
+            "Success",
+            "Warning",
+            "Error",
+            "System"
+          ]
+        }
+      }
+    },
+    {
+      "id": "3012:4382",
+      "key": "8c3008f75c383d57cfc780bdb152004872d4f69b",
+      "name": "tab.home",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Tab component lets users switch between related views, sections, or content areas without leaving the page. Tabs help organise information into clear, distinct panels so users can compare, explore, or complete tasks with minimal cognitive load.\n\nThey provide an efficient way to move between options like product details, reviews, delivery info, order history, or grouped tools within My Account. Tabs support quick orientation, reduce scrolling, and keep users grounded in the same context while changing what’s displayed.\n\nUsage:\nUse Tabs when content belongs to the same overall area but needs to be separated into meaningful sections. Tabs work best for parallel choices where users may move back and forth, such as product info categories, order management views, or grouped settings.\n\nTabs should be clearly labelled, short, and predictable. Active and inactive states must be visually distinct, with strong focus and touch indicators to support accessibility. Keep the number of Tabs manageable to avoid overwhelming users, and ensure the order follows natural user expectations.\n\nWhen using Tab Groups, maintain consistent spacing, alignment, and panel behaviour across themes and device sizes so users always understand which content is active and where to navigate next.",
+      "layout": {
+        "layoutMode": "NONE",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 0,
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Background": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Reels"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Background": {
+          "values": [
+            "Default",
+            "Reels"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1198:4671",
+      "key": "65a86de85b61d7bafcf2a8a1b3738f9d74696de5",
+      "name": "global.navigation",
+      "type": "COMPONENT_SET",
+      "description": "",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Platform": {
+          "type": "VARIANT",
+          "defaultValue": "iOS",
+          "variantOptions": [
+            "iOS",
+            "Android",
+            "mWeb",
+            "Tablet",
+            "dWeb"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Platform": {
+          "values": [
+            "iOS",
+            "Android",
+            "mWeb",
+            "Tablet",
+            "dWeb"
+          ]
+        }
+      }
+    },
+    {
+      "id": "3518:10139",
+      "key": "76a4a3f5d58af2fa55e4e09b0c4a834984a16d9c",
+      "name": "tab.bar",
+      "type": "COMPONENT_SET",
+      "description": "",
+      "layout": {
+        "layoutMode": "NONE",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 20,
+        "paddingTop": 20,
+        "paddingRight": 20,
+        "paddingBottom": 20,
+        "paddingLeft": 20,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Version": {
+          "type": "VARIANT",
+          "defaultValue": "Liquid Glass",
+          "variantOptions": [
+            "Current",
+            "Liquid Glass"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Version": {
+          "values": [
+            "Current",
+            "Liquid Glass"
+          ]
+        }
+      }
+    },
+    {
+      "id": "3928:25502",
+      "key": "c0893aa25a5b6bc749e8598d8fc247fdee09f75b",
+      "name": "my.account.navigation",
+      "type": "COMPONENT_SET",
+      "description": "",
+      "layout": {
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Loyalty & RR% slot#3928:0": {
+          "type": "SLOT",
+          "description": null,
+          "preferredValues": []
+        },
+        "Show Loyalty & RR% slot#3928:1": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "iOS • Items#3928:2": {
+          "type": "SLOT",
+          "description": null,
+          "preferredValues": []
+        },
+        "Android • Items#3928:3": {
+          "type": "SLOT",
+          "description": null,
+          "preferredValues": []
+        },
+        "Items#3928:4": {
+          "type": "SLOT",
+          "description": null,
+          "preferredValues": []
+        },
+        "dWeb • Items#3928:5": {
+          "type": "SLOT",
+          "description": null,
+          "preferredValues": []
+        },
+        "Platform": {
+          "type": "VARIANT",
+          "defaultValue": "iOS/Android/mWeb",
+          "variantOptions": [
+            "iOS/Android/mWeb",
+            "Tablet/dWeb"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Platform": {
+          "values": [
+            "iOS/Android/mWeb",
+            "Tablet/dWeb"
+          ]
+        }
+      }
+    },
+    {
+      "id": "616:45272",
+      "key": "3929374b256aa15d73d0b1002932372373671a8c",
+      "name": "web/modals",
+      "type": "COMPONENT_SET",
+      "description": "",
+      "layout": {
+        "layoutMode": "NONE",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 0,
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Platforms": {
+          "type": "VARIANT",
+          "defaultValue": "Mobile",
+          "variantOptions": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "CTA": {
+          "type": "VARIANT",
+          "defaultValue": "1 CTA",
+          "variantOptions": [
+            "1 CTA",
+            "2 CTAs"
+          ]
+        },
+        "Image": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Platforms": {
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "CTA": {
+          "values": [
+            "1 CTA",
+            "2 CTAs"
+          ]
+        },
+        "Image": {
+          "values": [
+            "False",
+            "True"
+          ]
+        }
+      }
+    },
+    {
+      "id": "672:59199",
+      "key": "1ffe6d7c359f318c0a627bc5ed0ae9e6dcb15ebb",
+      "name": "status.badge",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe Status Badge component highlights short, high-value information that helps users quickly understand the current state of an item, action, or process. Status Badges surface updates such as Low Stock, or Selling Fast in a compact, highly visible format that supports rapid scanning.\n\nThey act as lightweight signposts across product lists, order flows, and account experiences, allowing users to recognise key states without reading additional text or navigating elsewhere. Status Badges reinforce clarity, reduce ambiguity, and help users make confident decisions at speed.\n\nUsage:\nUse Status Badges when you need to communicate a clear state or condition associated with a product, order, or system action. They work best for discrete, easily understood labels that benefit from immediate visual recognition.\n\nBadges should remain short, consistent, and written in plain language. Visual styles must provide strong contrast and clear differentiation across states, ensuring users can understand meaning at a glance. Keep Badge usage purposeful to avoid noise or over-signposting.\n\nWhen using multiple Status Badges together, ensure spacing, alignment, and ordering remain predictable so users can scan them effortlessly across devices and themes. Badges should always complement surrounding content without competing for primary focus.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 24,
+        "paddingTop": 24,
+        "paddingRight": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Text#672:81": {
+          "type": "TEXT",
+          "defaultValue": "Status text"
+        },
+        "Discount text#672:84": {
+          "type": "TEXT",
+          "defaultValue": "-25%"
+        },
+        "Number#672:89": {
+          "type": "TEXT",
+          "defaultValue": "520"
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Square",
+          "variantOptions": [
+            "Square",
+            "Discount",
+            "Half-Pill",
+            "Pill",
+            "New",
+            "Social Half-Pill"
+          ]
+        },
+        "Status": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Out of Stock",
+            "Discount",
+            "New",
+            "Likes"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Large"
+          ]
+        },
+        "Filled": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Invert": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Type": {
+          "values": [
+            "Square",
+            "Discount",
+            "Half-Pill",
+            "Pill",
+            "New",
+            "Social Half-Pill"
+          ]
+        },
+        "Status": {
+          "values": [
+            "Default",
+            "Out of Stock",
+            "Discount",
+            "New",
+            "Likes"
+          ]
+        },
+        "Size": {
+          "values": [
+            "Default",
+            "Large"
+          ]
+        },
+        "Filled": {
+          "values": [
+            "False",
+            "True"
+          ]
+        },
+        "Invert": {
+          "values": [
+            "False",
+            "True"
+          ]
+        }
+      }
+    },
+    {
+      "id": "722:18485",
+      "key": "97660265bbf3126aad4d35c04910c214f3319427",
+      "name": "status-bar",
+      "type": "COMPONENT_SET",
+      "description": "",
+      "layout": {
+        "layoutMode": "NONE",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 0,
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Stage": {
+          "type": "VARIANT",
+          "defaultValue": "Success 1",
+          "variantOptions": [
+            "Success 1",
+            "Success 2",
+            "Success 3",
+            "Warning"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Stage": {
+          "values": [
+            "Success 1",
+            "Success 2",
+            "Success 3",
+            "Warning"
+          ]
+        }
+      }
+    },
+    {
+      "id": "997:798",
+      "key": "4f3a532db1b7b48d37b578282553104b130291fa",
+      "name": "loading-spinner.branded.medium",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe loading spinner communicates that a process is in progress and the system is actively working. It reassures users that their action has been received and helps set expectations while content or data is loading.\n\nUsage:\nUse the loading spinner when an action takes more than a moment to complete, such as fetching data or submitting a form. Place it near the area being updated, and remove it as soon as the process finishes. Avoid using spinners for instant actions or as a permanent state.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 16,
+        "paddingTop": 16,
+        "paddingRight": 16,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "spinner position": {
+          "type": "VARIANT",
+          "defaultValue": "0 degrees",
+          "variantOptions": [
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees",
+            "90 degrees"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "spinner position": {
+          "values": [
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees",
+            "90 degrees"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1030:52",
+      "key": "023ad779681292232fb8cfa5468814106ffb1bd0",
+      "name": "loading-spinner.standard.inline",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe loading spinner communicates that a process is in progress and the system is actively working. It reassures users that their action has been received and helps set expectations while content or data is loading.\n\nUsage:\nUse the loading spinner when an action takes more than a moment to complete, such as fetching data or submitting a form. Place it near the area being updated, and remove it as soon as the process finishes. Avoid using spinners for instant actions or as a permanent state.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 5,
+        "paddingTop": 16,
+        "paddingRight": 16,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "spinner position": {
+          "type": "VARIANT",
+          "defaultValue": "0 degrees",
+          "variantOptions": [
+            "90 degrees",
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "spinner position": {
+          "values": [
+            "90 degrees",
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1030:110",
+      "key": "3f97d0b4e663a4bdf19649c06819095e603799bd",
+      "name": "loading-spinner.standard.small",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe loading spinner communicates that a process is in progress and the system is actively working. It reassures users that their action has been received and helps set expectations while content or data is loading.\n\nUsage:\nUse the loading spinner when an action takes more than a moment to complete, such as fetching data or submitting a form. Place it near the area being updated, and remove it as soon as the process finishes. Avoid using spinners for instant actions or as a permanent state.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 16,
+        "paddingTop": 16,
+        "paddingRight": 16,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Property 1": {
+          "type": "VARIANT",
+          "defaultValue": "0 degrees",
+          "variantOptions": [
+            "90 degrees",
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Property 1": {
+          "values": [
+            "90 degrees",
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1030:117",
+      "key": "78388920d8bbd768237017fc4efa76dd7a8de3a9",
+      "name": "loading-spinner.standard.medium",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe loading spinner communicates that a process is in progress and the system is actively working. It reassures users that their action has been received and helps set expectations while content or data is loading.\n\nUsage:\nUse the loading spinner when an action takes more than a moment to complete, such as fetching data or submitting a form. Place it near the area being updated, and remove it as soon as the process finishes. Avoid using spinners for instant actions or as a permanent state.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 16,
+        "paddingTop": 16,
+        "paddingRight": 16,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Property 1": {
+          "type": "VARIANT",
+          "defaultValue": "0 degrees",
+          "variantOptions": [
+            "90 degrees",
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Property 1": {
+          "values": [
+            "90 degrees",
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1044:30",
+      "key": "dcf919294e38d1a22a5917e096c81b5962b80d41",
+      "name": "loading-spinner.standard.large",
+      "type": "COMPONENT_SET",
+      "description": "Intent:\nThe loading spinner communicates that a process is in progress and the system is actively working. It reassures users that their action has been received and helps set expectations while content or data is loading.\n\nUsage:\nUse the loading spinner when an action takes more than a moment to complete, such as fetching data or submitting a form. Place it near the area being updated, and remove it as soon as the process finishes. Avoid using spinners for instant actions or as a permanent state.",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 16,
+        "paddingTop": 16,
+        "paddingRight": 16,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Property 1": {
+          "type": "VARIANT",
+          "defaultValue": "0 degrees",
+          "variantOptions": [
+            "90 degrees",
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Property 1": {
+          "values": [
+            "90 degrees",
+            "0 degrees",
+            "-90 degrees",
+            "180 degrees"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1081:2461",
+      "key": "a1fe546cf6ba590b6c4d108c0bd732538e99ab74",
+      "name": "operating.system-ui",
+      "type": "COMPONENT_SET",
+      "description": "",
+      "layout": {
+        "layoutMode": "VERTICAL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 20,
+        "paddingTop": 20,
+        "paddingRight": 20,
+        "paddingBottom": 20,
+        "paddingLeft": 20,
+        "cornerRadius": 5
+      },
+      "styles": {
+        "fillStyleId": "",
+        "strokeStyleId": "",
+        "effectStyleId": "",
+        "gridStyleId": "",
+        "textStyleId": "",
+        "boundVariables": {}
+      },
+      "componentPropertyDefinitions": {
+        "Platform": {
+          "type": "VARIANT",
+          "defaultValue": "iOS",
+          "variantOptions": [
+            "iOS",
+            "Android",
+            "mWeb",
+            "Tablet",
+            "dWeb"
+          ]
+        }
+      },
+      "variantProperties": {},
+      "variantGroupProperties": {
+        "Platform": {
+          "values": [
+            "iOS",
+            "Android",
+            "mWeb",
+            "Tablet",
+            "dWeb"
+          ]
+        }
+      }
+    }
+  ]
+}
